@@ -23,6 +23,22 @@ You play on the monitor connected to your PC. Your controller stays connected to
 
 > **Good to know:** The picture looks smoother, but the console itself does not run faster. Some extra delay or picture errors can occur.
 
+## 🎥 See the result
+
+This short side-by-side demo shows what the method looks like in practice: **Assassin’s Creed Mirage on PS5 at the original 30 FPS compared with a 60 FPS output created by Lossless Scaling.**
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=ntizJL75VQM">
+    <img src="https://img.youtube.com/vi/ntizJL75VQM/maxresdefault.jpg" alt="PS5 30 FPS versus 60 FPS Lossless Scaling demo with Assassin’s Creed Mirage" width="720">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=ntizJL75VQM"><strong>▶️ Watch the 30 FPS vs. 60 FPS demo on YouTube</strong></a>
+</p>
+
+The video focuses on the visible result of frame generation.
+
 ## 🧰 What you need
 
 ### Hardware

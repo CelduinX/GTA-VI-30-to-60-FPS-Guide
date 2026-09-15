@@ -23,6 +23,22 @@ Du spielst am Monitor, der mit deinem PC verbunden ist. Dein Controller bleibt w
 
 > **Gut zu wissen:** Das Bild wirkt flüssiger, die Konsole selbst wird dadurch aber nicht schneller. Etwas zusätzliche Verzögerung oder Bildfehler sind möglich.
 
+## 🎥 So sieht das Ergebnis aus
+
+Diese kurze Side-by-Side-Demo zeigt die Methode in der Praxis: **Assassin’s Creed Mirage auf der PS5 mit originalen 30 FPS im Vergleich zur 60-FPS-Ausgabe durch Lossless Scaling.**
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=ntizJL75VQM">
+    <img src="https://img.youtube.com/vi/ntizJL75VQM/maxresdefault.jpg" alt="PS5-Vergleich zwischen 30 FPS und 60 FPS mit Lossless Scaling und Assassin’s Creed Mirage" width="720">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=ntizJL75VQM"><strong>▶️ 30-FPS-vs.-60-FPS-Demo auf YouTube ansehen</strong></a>
+</p>
+
+Im Mittelpunkt steht das sichtbare Ergebnis der Frame Generation.
+
 ## 🧰 Das brauchst du
 
 ### Hardware
