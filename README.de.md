@@ -45,10 +45,12 @@ Du spielst am Monitor, der mit deinem PC verbunden ist. Dein Controller bleibt w
 
 Diese drei UGREEN-Modelle kannst du miteinander vergleichen:
 
-| Modell | Produktseite |
-| --- | --- |
-| UGREEN B0DT9DY312 | [Auf Amazon.de ansehen](https://www.amazon.de/dp/B0DT9DY312) |
-| UGREEN B0DGXJS6BF | [Auf Amazon.de ansehen](https://www.amazon.de/dp/B0DGXJS6BF) |
-| UGREEN B0D4LV836Z | [Auf Amazon.de ansehen](https://www.amazon.de/dp/B0D4LV836Z) |
+| UGREEN-Modell | Aufnahme am PC | PC-Anschluss | HDMI-Durchschleifausgang | Richtpreis* | Shop |
+| --- | --- | --- | --- | ---: | --- |
+| [15389](https://www.amazon.com/dp/B0DT9DY312) | 1080p / 60 FPS<br>2K / 30 FPS | USB-A / USB-C<br>USB 3.0 | — | ca. 16 € | [Amazon.de](https://www.amazon.de/dp/B0DT9DY312) |
+| [25773](https://www.amazon.com/dp/B0DGXJS6BF) | 1080p / 60 FPS<br>2K / 30 FPS | USB-A / USB-C<br>USB 3.0 | 4K / 30 Hz | ca. 22 € | [Amazon.de](https://www.amazon.de/dp/B0DGXJS6BF) |
+| [25173](https://www.amazon.com/dp/B0D4LV836Z) | 4K / 60 FPS<br>2K / 144 FPS<br>1080p / 240 FPS | USB-A / USB-C<br>USB 3.0 | 4K / 60 Hz | ca. 72 € | [Amazon.de](https://www.amazon.de/dp/B0D4LV836Z) |
 
-> **Tipp zum Kauf:** Prüfe, welche Auflösung und Bildrate die Karte **per USB aufnehmen** kann, und vergleiche den aktuellen Preis. Die Aufschrift „4K“ allein sagt noch nicht, in welcher Qualität das Bild am PC ankommt.
+*Die Preise dienen als Orientierung aus der ursprünglichen Produktauswahl und sind keine Tagesangebote. Aktuelle Preise findest du auf Amazon.de. Die Modellnamen verlinken die Produktdaten; die Aufnahmemodi sind Herstellerangaben.*
+
+> **Tipp zum Kauf:** Für diese Anleitung zählt die Spalte „Aufnahme am PC“. Der HDMI-Durchschleifausgang gibt das ursprüngliche Konsolenbild an einen zusätzlichen Fernseher oder Monitor weiter — ohne die Zwischenbilder von Lossless Scaling.

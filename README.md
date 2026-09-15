@@ -45,10 +45,12 @@ You play on the monitor connected to your PC. Your controller stays connected to
 
 These three UGREEN models are options to compare:
 
-| Model | Product page |
-| --- | --- |
-| UGREEN B0DT9DY312 | [View on Amazon.de](https://www.amazon.de/dp/B0DT9DY312) |
-| UGREEN B0DGXJS6BF | [View on Amazon.de](https://www.amazon.de/dp/B0DGXJS6BF) |
-| UGREEN B0D4LV836Z | [View on Amazon.de](https://www.amazon.de/dp/B0D4LV836Z) |
+| UGREEN model | Capture on PC | PC connection | HDMI passthrough | Guide price* | Shop |
+| --- | --- | --- | --- | ---: | --- |
+| [15389](https://www.amazon.com/dp/B0DT9DY312) | 1080p / 60 FPS<br>2K / 30 FPS | USB-A / USB-C<br>USB 3.0 | — | ≈ €16 | [Amazon.de](https://www.amazon.de/dp/B0DT9DY312) |
+| [25773](https://www.amazon.com/dp/B0DGXJS6BF) | 1080p / 60 FPS<br>2K / 30 FPS | USB-A / USB-C<br>USB 3.0 | 4K / 30 Hz | ≈ €22 | [Amazon.de](https://www.amazon.de/dp/B0DGXJS6BF) |
+| [25173](https://www.amazon.com/dp/B0D4LV836Z) | 4K / 60 FPS<br>2K / 144 FPS<br>1080p / 240 FPS | USB-A / USB-C<br>USB 3.0 | 4K / 60 Hz | ≈ €72 | [Amazon.de](https://www.amazon.de/dp/B0D4LV836Z) |
 
-> **Buying tip:** Check the resolution and frame rate the card can **capture over USB**, as well as its current price. A “4K” label alone does not tell you what picture quality reaches your PC.
+*Prices are estimates from the original product shortlist, not live offers. Check Amazon.de for current prices. Model names link to the product specifications; capture modes are manufacturer ratings.*
+
+> **Buying tip:** “Capture on PC” is the key column for this guide. HDMI passthrough sends the original console picture to a separate TV or monitor, without the extra frames from Lossless Scaling.
