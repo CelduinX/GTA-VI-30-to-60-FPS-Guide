@@ -1,116 +1,57 @@
 # 🎮 FrameHeist
 
-### Flüssigeres Konsolenbild mit Capture Card und Lossless Scaling
+### Ein flüssigeres Bild für deine Konsolenspiele
 
-**🌐 Sprache: [🇬🇧 English](README.md) · Deutsch**
+**🌐 [🇬🇧 English](README.md) · 🇩🇪 Deutsch**
 
-Mit HDMI-Capture und Frame Generation lässt sich ein Konsolenbild auf dem PC flüssiger darstellen. Diese Anleitung entsteht mit Blick auf GTA VI auf PS5 / Xbox Series X|S; das Grundprinzip lässt sich auch mit anderen Konsolenspielen erproben.
+Du möchtest auf deiner PS5 oder Xbox ein flüssigeres Bild? FrameHeist zeigt dir, wie du das Konsolenbild auf deinen PC überträgst und mit **Lossless Scaling** zusätzliche Bilder erzeugst — mit dem Ziel, aus 30 FPS flüssigere 60 FPS oder mehr zu machen.
 
-> [!IMPORTANT]
-> **In Arbeit · Erste Fassung · 15. September 2026**
->
-> Konzept und Ausstattung sind dokumentiert. Konkrete Einstellungen und Praxistests stehen noch aus. „30 → 60 FPS“ ist ein beispielhaftes Ziel, kein bestätigtes GTA-VI-Ergebnis und keine Aussage über dessen Bildrate auf Konsolen.
+Im Mittelpunkt steht GTA VI. Das Prinzip lässt sich aber auch mit anderen Konsolenspielen nutzen.
 
-**Direkt zu:** [Funktionsweise](#how-it-works) · [Ausstattung](#equipment) · [Einrichtung](#setup) · [Nächste Schritte](#next-steps)
+## ✨ Die Idee kurz erklärt
 
-<a id="how-it-works"></a>
-## ✨ So funktioniert es
+Eine Capture Card bringt das Bild deiner Konsole auf den PC. Die kostenlose App **vicash** zeigt es an, und **Lossless Scaling** ergänzt Zwischenbilder, damit Bewegungen flüssiger aussehen. Das nennt sich *Frame Generation*.
 
-Das Spiel läuft auf der Konsole. Eine Capture Card überträgt deren HDMI-Bild an den PC, wo **vicash** eine Vorschau anzeigt. **Lossless Scaling** verarbeitet diese Vorschau und erzeugt Zwischenbilder für die Ausgabe auf dem PC-Monitor.
+Du spielst am Monitor, der mit deinem PC verbunden ist. Dein Controller bleibt wie gewohnt an der Konsole.
 
-```mermaid
-flowchart TD
-    A["PS5 / Xbox Series X|S"] -->|HDMI| B["Capture Card · HDMI IN"]
-    B -->|USB-Video| C["PC · vicash-Vorschau"]
-    C --> D["PC · Lossless Scaling"]
-    D -->|"PC-HDMI / DisplayPort"| E["Monitor · verarbeitetes Bild"]
-    B -.->|"Optional: HDMI OUT / Passthrough"| F["TV · ursprüngliches Konsolenbild"]
-```
+Die zusätzlichen Bilder sorgen für einen flüssigeren Bildeindruck. Die Konsole selbst wird dadurch nicht schneller; etwas zusätzliche Verzögerung oder Bildfehler sind möglich.
 
-**Gespielt wird mit Blick auf die PC-Ausgabe.** Ein Fernseher am optionalen Passthrough-Ausgang der Karte erhält das ursprüngliche Konsolensignal ohne die am PC erzeugten Zwischenbilder. Dein Controller bleibt mit der Konsole verbunden.
-
-### Was „30 → 60 FPS“ bedeutet
-
-Frame Generation erzeugt zusätzliche Bilder zwischen den Ausgangsbildern. Eine ideale Verdopplung sieht schematisch so aus:
-
-```mermaid
-flowchart LR
-    A["Originalbild A"] --> G["Berechnetes Zwischenbild"] --> B["Originalbild B"]
-```
-
-Das Spiel berechnet seine Spielwelt und Originalbilder weiterhin mit der ursprünglichen Rate. Bewegungen können flüssiger aussehen, reagieren aber nicht wie bei nativen 60 FPS. Aufnahme, Vorschau und Verarbeitung können Verzögerung hinzufügen; an bewegten Objekten oder Bedienelementen können Bildfehler entstehen.
-
-> [!NOTE]
-> **Spiel-FPS, Capture-FPS und Monitor-Hz sind unterschiedliche Werte.** Ein Capture-Stream mit 60 FPS kann wiederholte Bilder eines 30-FPS-Spiels enthalten. Eine 2×-Einstellung garantiert deshalb nicht automatisch 60 unterschiedliche, gleichmäßig verteilte Bilder. Dieses Zusammenspiel zwischen Aufnahme und Frame Generation muss für die Anleitung noch getestet werden.
-
-<a id="equipment"></a>
 ## 🧰 Das brauchst du
 
-| Bestandteil | Zweck / Auswahlhilfe |
+- **PS5 oder Xbox Series X|S**
+- **HDMI Capture Card** und passende HDMI- und USB-Kabel
+- **Windows-PC mit geeigneter Grafikkarte** — [Lossless Scaling empfiehlt](https://store.steampowered.com/app/993090/Lossless_Scaling/) NVIDIA RTX 30-Serie, AMD RX 6000-Serie oder Intel Arc
+- **Monitor am PC** mit mindestens 60 Hz
+- **[vicash](https://github.com/caaatto/vicash/releases)** — kostenlos, zeigt das Konsolenbild auf deinem PC
+- **[Lossless Scaling](https://store.steampowered.com/app/993090/Lossless_Scaling/)** — kostenpflichtig auf Steam erhältlich
+
+### 🛒 Capture Card auswählen
+
+Achte darauf, dass die Karte deine gewünschte **Auflösung und Bildrate per USB aufnehmen** kann. Die Aufschrift „4K“ allein sagt noch nicht, in welcher Qualität das Bild am PC ankommt.
+
+Diese drei UGREEN-Modelle kannst du miteinander vergleichen:
+
+| Modell | Link |
 | --- | --- |
-| PS5 oder Xbox Series X\|S | Führt das Spiel aus und liefert das HDMI-Signal. |
-| HDMI Capture Card | Überträgt das Bild per USB an den PC. Prüfe **Auflösung und Bildrate der USB-Aufnahme** getrennt von HDMI-Eingang und Passthrough. |
-| Windows-PC mit freien GPU-Ressourcen | Lossless Scaling nennt RTX 30, RX 6000 und Intel Arc als empfohlene GPU-Familien; das sind keine festen Mindestanforderungen. Siehe die [aktuellen Systemanforderungen](https://store.steampowered.com/app/993090/Lossless_Scaling/). |
-| [vicash](https://github.com/caaatto/vicash) | Kostenlose Software für die Capture-Vorschau. Download über die [Releases des Projekts](https://github.com/caaatto/vicash/releases). |
-| [Lossless Scaling](https://store.steampowered.com/app/993090/Lossless_Scaling/) | Kostenpflichtige Software mit LSFG Frame Generation. Den aktuellen regionalen Preis findest du auf Steam. |
-| Monitor am PC und passende Kabel | Mindestens 60 Hz für ein Ausgabeziel von 60 FPS. Höhere Ziele benötigen auch einen passenden Anzeigemodus und genügend PC-Leistung. |
+| UGREEN B0DT9DY312 | [Auf Amazon.de ansehen](https://www.amazon.de/dp/B0DT9DY312) |
+| UGREEN B0DGXJS6BF | [Auf Amazon.de ansehen](https://www.amazon.de/dp/B0DGXJS6BF) |
+| UGREEN B0D4LV836Z | [Auf Amazon.de ansehen](https://www.amazon.de/dp/B0D4LV836Z) |
 
-Benötigt werden eine HDMI-Verbindung von der Konsole zur Karte, eine geeignete USB-Verbindung von der Karte zum PC und eine Bildverbindung vom PC zum Monitor. Für den oben gezeigten Grundaufbau ist kein HDMI-Splitter nötig.
+Prüfe vor dem Kauf die Aufnahmefunktionen des genauen Modells und den aktuellen Preis.
 
-<details>
-<summary>🛒 Capture-Card-Kandidaten aus der Rohfassung</summary>
+## 🔌 Erste Schritte
 
-Diese Modelle sind Recherchekandidaten, **noch keine getesteten Empfehlungen**. Die folgenden Preise und Modusangaben stammen aus den ursprünglichen Notizen; Produktspezifikationen und aktuelle Preise konnten für diesen Entwurf nicht unabhängig bestätigt werden.
+### 1. Konsole mit dem PC verbinden
 
-| Kandidat | Preis aus der Rohfassung | Modusangabe aus der Rohfassung — Aufnahmefähigkeit ungeprüft |
-| --- | --- | --- |
-| [UGREEN · B0DT9DY312](https://www.amazon.de/dp/B0DT9DY312) | ca. 16 € | 1080p / 60 Hz |
-| [UGREEN · B0DGXJS6BF](https://www.amazon.de/dp/B0DGXJS6BF) | ca. 22 € | „2K“ / 30 Hz |
-| [UGREEN · B0D4LV836Z](https://www.amazon.de/dp/B0D4LV836Z) | ca. 72 € | 4K / 60 Hz |
+Stecke das HDMI-Kabel deiner Konsole in **HDMI IN** der Capture Card. Verbinde die Karte anschließend per USB mit deinem PC.
 
-Prüfe vor dem Kauf die USB-Aufnahmemodi, den benötigten USB-Anschluss und die Audio-Unterstützung des genauen Modells. „4K“ kann sich auf HDMI-Eingang oder Passthrough statt auf die USB-Aufnahme beziehen. „2K“ allein legt die tatsächliche Pixelauflösung nicht eindeutig fest.
+Dein Monitor bleibt am PC angeschlossen — hier siehst du später das flüssigere Bild.
 
-</details>
+### 2. Konsolenbild öffnen
 
-<a id="setup"></a>
-## 🔌 Einrichtung — vorbereitender Entwurf
+Lade **[vicash](https://github.com/caaatto/vicash/releases)** herunter, öffne die App und wähle deine Capture Card aus.
 
-Der folgende Ablauf ist ein Einstieg, **noch keine vollständig getestete Konfiguration**.
+- Mit **F1** öffnest du die Einstellungen.
+- Mit **F11** wechselst du ins Vollbild.
 
-### 1. Geräte verbinden
-
-Verbinde den HDMI-Ausgang der Konsole mit **HDMI IN** der Capture Card und anschließend die Karte per USB mit dem PC. Verwende den am PC angeschlossenen Monitor für das verarbeitete Bild.
-
-### 2. Vorschau zum Laufen bringen
-
-Öffne vicash und wähle die Capture Card. Laut Dokumentation öffnet **F1** die Einstellungen; **F11** aktiviert den randlosen Vollbildmodus. Prüfe Bild und Ton, bevor du Frame Generation hinzunimmst. Siehe die [vicash-Dokumentation](https://github.com/caaatto/vicash).
-
-### 3. Frame Generation vorbereiten
-
-Lossless Scaling unterstützt Fenster und randloses Vollbild sowie feste Multiplikation oder eine adaptive Zielbildrate. Den genauen Modus, die Capture-Einstellungen und die Aktivierungsfolge für diesen Konsolenaufbau ergänzen wir nach dem Test. Siehe die [offizielle Softwarebeschreibung](https://store.steampowered.com/app/993090/Lossless_Scaling/).
-
-### 4. Ergebnis überprüfen
-
-Vergleiche dieselbe langsame Kamerabewegung mit und ohne Verarbeitung. Achte auf flüssige Bewegung, Controller-Reaktion, Bildfehler und synchronen Ton. Notiere Konsolenmodus, Capture-Modus, Monitor-Bildwiederholrate, Grafikkarte und Softwareversionen zusammen mit den Ergebnissen.
-
-**Erstes Ziel:** eine stabile, visuell überprüfte Ausgabe mit 60 FPS aus einer geeigneten 30-FPS-Quelle. Höhere Ziele folgen erst, wenn diese Grundlage funktioniert.
-
-<a id="next-steps"></a>
-## 🚧 Was fehlt noch?
-
-- [x] Prinzip und Grenzen erklären.
-- [x] Ausstattung und Capture-Card-Kandidaten strukturieren.
-- [x] Englische und deutsche Fassung mit Anschlussdiagrammen bereitstellen.
-- [ ] Capture-Card-Spezifikationen prüfen und mindestens einen Aufbau testen.
-- [ ] Konsolen-Bildeinstellungen einschließlich PS5-HDCP-Handhabung dokumentieren.
-- [ ] Getestete vicash- und Lossless-Scaling-Einstellungen mit Screenshots ergänzen.
-- [ ] Wiederholte Ausgangsbilder, gleichmäßige Bildabstände, Latenz und Tonsynchronität prüfen.
-- [ ] Fehlerbehebung und, sobald verfügbar, GTA-VI-Testergebnisse ergänzen.
-
-### 📚 Quellen
-
-Softwareangaben geprüft am 15. September 2026: [vicash-Projektdokumentation](https://github.com/caaatto/vicash) und [Lossless Scaling auf Steam](https://store.steampowered.com/app/993090/Lossless_Scaling/). Die Hardwarekandidaten stammen aus den Arbeitsnotizen des Projekts. Diese Version enthält keine Hardwaretests oder GTA-VI-Messungen.
-
----
-
-Unabhängige Community-Anleitung. Keine Verbindung zu Rockstar Games, Sony, Microsoft, UGREEN oder den Softwareentwicklern.
+Prüfe, ob du das Spiel siehst und den Ton hörst. Damit ist dein Konsolenbild auf dem PC bereit.
