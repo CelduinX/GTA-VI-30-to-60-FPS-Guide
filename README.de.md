@@ -38,20 +38,3 @@ Diese drei UGREEN-Modelle kannst du miteinander vergleichen:
 | UGREEN B0D4LV836Z | [Auf Amazon.de ansehen](https://www.amazon.de/dp/B0D4LV836Z) |
 
 Prüfe vor dem Kauf die Aufnahmefunktionen des genauen Modells und den aktuellen Preis.
-
-## 🔌 Erste Schritte
-
-### 1. Konsole mit dem PC verbinden
-
-Stecke das HDMI-Kabel deiner Konsole in **HDMI IN** der Capture Card. Verbinde die Karte anschließend per USB mit deinem PC.
-
-Dein Monitor bleibt am PC angeschlossen — hier siehst du später das flüssigere Bild.
-
-### 2. Konsolenbild öffnen
-
-Lade **[vicash](https://github.com/caaatto/vicash/releases)** herunter, öffne die App und wähle deine Capture Card aus.
-
-- Mit **F1** öffnest du die Einstellungen.
-- Mit **F11** wechselst du ins Vollbild.
-
-Prüfe, ob du das Spiel siehst und den Ton hörst. Damit ist dein Konsolenbild auf dem PC bereit.

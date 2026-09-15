@@ -38,20 +38,3 @@ These three UGREEN models are options to compare:
 | UGREEN B0D4LV836Z | [View on Amazon.de](https://www.amazon.de/dp/B0D4LV836Z) |
 
 Check the exact model's recording capabilities and current price before buying.
-
-## 🔌 Getting started
-
-### 1. Connect your console to the PC
-
-Connect your console's HDMI cable to **HDMI IN** on the capture card. Then connect the card to your PC using USB.
-
-Keep your monitor connected to the PC — this is where you will see the smoother picture.
-
-### 2. Open the console picture
-
-Download and open **[vicash](https://github.com/caaatto/vicash/releases)**, then select your capture card.
-
-- **F1** opens the settings.
-- **F11** switches to fullscreen.
-
-Check that you can see the game and hear its sound. Your console picture is now ready on the PC.
