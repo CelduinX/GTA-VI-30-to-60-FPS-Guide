@@ -70,3 +70,78 @@ These three UGREEN models are options to compare:
 *Prices are estimates from the original product shortlist, not live offers. Check Amazon.de for current prices. Model names link to the product specifications; capture modes are manufacturer ratings.*
 
 > **Buying tip:** “Capture on PC” is the key column for this guide. HDMI passthrough sends the original console picture to a separate TV or monitor, without the extra frames from Lossless Scaling.
+
+## 🖥️ Configure vicash
+
+Open the settings with **F1** and use the following values:
+
+| Section | Setting | Value |
+| --- | --- | --- |
+| 🖥️ **Display** | Display mode | **Immediate** — no V-Sync and the lowest latency |
+| 📷 **Capture** | Device | **UGREEN Capture Card** |
+| | Resolution | **1920 × 1080** or **2560 × 1440** — choose the highest resolution supported by your PC monitor |
+| | FPS | **30** |
+| 🔊 **Audio** | Input | **UGREEN Capture Card** |
+| | Output | Your PC speakers or headphones |
+| | Volume | Increase it if the PS5 is too quiet |
+| | Sync delay | **100 ms** (default) |
+
+### Useful hotkeys
+
+| Key | Action |
+| --- | --- |
+| **F1** | Open settings |
+| **F11** | Toggle fullscreen |
+| **Esc** | Exit fullscreen |
+
+## 🚀 Configure Lossless Scaling
+
+### 1. Create a profile for vicash
+
+Create a new profile called **vicash** and select **vicash.exe** as the application. Leave automatic scaling turned off.
+
+<p align="center">
+  <img src="assets/screenshots/ls_step1.png" alt="Creating a vicash profile in Lossless Scaling" width="645">
+</p>
+
+### 2. Apply the recommended settings
+
+#### Frame Generation
+
+| Setting | Value |
+| --- | --- |
+| Type | **LSFG 3.1** |
+| Mode | **Fixed** |
+| Multiplier | **2** |
+| Flow scale | See the resolution table below |
+| Performance | **Off** |
+
+Use the Flow scale value that matches the resolution selected in vicash:
+
+| Resolution | Flow scale |
+| --- | ---: |
+| **1920 × 1080** (Full HD) | **100** |
+| **2560 × 1440** (2K) | **75–100** |
+| **3840 × 2160** (4K) | **50–67** |
+
+#### Scaling and Capture
+
+| Section | Setting | Value |
+| --- | --- | --- |
+| **Scaling** | Type | **Off** |
+| **Capture** | Capture API | **DXGI** |
+| | Queue target | **0** |
+
+#### Rendering
+
+| Setting | Value |
+| --- | --- |
+| Sync mode | **Default** |
+| Max frame latency | **3** |
+| HDR support | **Off** |
+| G-Sync support | **On** if your monitor supports G-Sync or FreeSync |
+| Draw FPS | **On or Off** — optionally displays the original and generated FPS |
+
+<p align="center">
+  <img src="assets/screenshots/ls_step2.png" alt="Recommended Lossless Scaling settings for the vicash profile" width="900">
+</p>
