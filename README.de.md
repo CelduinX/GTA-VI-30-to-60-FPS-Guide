@@ -1,7 +1,7 @@
 <h1 align="center">🎮 FrameHeist</h1>
 
 <p align="center">
-  <strong>Ein flüssigeres Bild für deine Konsolenspiele</strong><br>
+  <strong>30-FPS-Konsolenspiele mit 60 FPS oder mehr flüssiger aussehen lassen</strong><br>
   GTA VI · PS5 · Xbox Series X|S
 </p>
 
@@ -9,23 +9,28 @@
   🌐 <a href="README.md"><strong>🇬🇧 English</strong></a> &nbsp; | &nbsp; <strong>🇩🇪 Deutsch</strong>
 </p>
 
+<p align="center">
+  <a href="#demo">🎥 Demo</a> &nbsp;•&nbsp;
+  <a href="#voraussetzungen">🧰 Das brauchst du</a> &nbsp;•&nbsp;
+  <a href="#capture-card">🛒 Capture Card</a> &nbsp;•&nbsp;
+  <a href="#vicash">🖥️ vicash</a> &nbsp;•&nbsp;
+  <a href="#lossless-scaling">🚀 Lossless Scaling</a>
+</p>
+
 ---
 
-Du möchtest auf deiner PS5 oder Xbox ein flüssigeres Bild? Mit einer **Capture Card**, deinem **PC** und **Lossless Scaling** kannst du zusätzliche Bilder für dein Konsolenspiel erzeugen. Das Ziel: **von 30 FPS auf flüssigere 60 FPS oder mehr.**
+FrameHeist zeigt dir, wie Konsolenspiele mit einer **Capture Card**, einem **Windows-PC**, **vicash** und **Lossless Scaling** flüssiger aussehen können. Im Mittelpunkt steht GTA VI, die Methode funktioniert aber auch mit anderen Konsolenspielen.
 
-Im Mittelpunkt steht GTA VI. Das Prinzip lässt sich aber auch mit anderen Konsolenspielen nutzen.
+Die Capture Card bringt das Konsolenbild auf deinen PC. **vicash** zeigt es an, während **Lossless Scaling** zusätzliche Zwischenbilder erzeugt. Du spielst weiterhin mit dem Controller, der mit deiner Konsole verbunden ist.
 
-## ✨ Die Idee kurz erklärt
+> [!NOTE]
+> Das Bild wirkt flüssiger, die Konsole selbst wird dadurch aber nicht schneller. Frame Generation kann die Verzögerung leicht erhöhen und gelegentlich Bildfehler verursachen.
 
-Eine Capture Card bringt das Bild deiner Konsole auf den PC. Die kostenlose App **vicash** zeigt es an, und **Lossless Scaling** ergänzt Zwischenbilder, damit Bewegungen flüssiger aussehen. Das nennt sich *Frame Generation*.
+<a id="demo"></a>
 
-Du spielst am Monitor, der mit deinem PC verbunden ist. Dein Controller bleibt wie gewohnt an der Konsole.
+## 🎥 Sieh dir das Ergebnis an
 
-> **Gut zu wissen:** Das Bild wirkt flüssiger, die Konsole selbst wird dadurch aber nicht schneller. Etwas zusätzliche Verzögerung oder Bildfehler sind möglich.
-
-## 🎥 So sieht das Ergebnis aus
-
-Diese kurze Side-by-Side-Demo zeigt die Methode in der Praxis: **Assassin’s Creed Mirage auf der PS5 mit originalen 30 FPS im Vergleich zur 60-FPS-Ausgabe durch Lossless Scaling.**
+Diese Side-by-Side-Demo zeigt **Assassin’s Creed Mirage auf der PS5** mit originalen 30 FPS im Vergleich zur 60-FPS-Ausgabe durch Lossless Scaling.
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=ntizJL75VQM">
@@ -37,29 +42,31 @@ Diese kurze Side-by-Side-Demo zeigt die Methode in der Praxis: **Assassin’s Cr
   <a href="https://www.youtube.com/watch?v=ntizJL75VQM"><strong>▶️ 30-FPS-vs.-60-FPS-Demo auf YouTube ansehen</strong></a>
 </p>
 
-Im Mittelpunkt steht das sichtbare Ergebnis der Frame Generation.
+<a id="voraussetzungen"></a>
 
-## 🧰 Das brauchst du
+## 1️⃣ Das brauchst du
 
 ### Hardware
 
-- **Konsole:** PS5 oder Xbox Series X|S
-- **Capture Card:** HDMI-Modell mit passenden HDMI- und USB-Kabeln
-- **PC:** Windows, mit geeigneter Grafikkarte
-- **Monitor:** am PC angeschlossen, mit mindestens 60 Hz
+- 🎮 **Konsole:** PS5 oder Xbox Series X|S
+- 🔌 **Capture Card:** HDMI-Modell mit passenden HDMI- und USB-Kabeln
+- 🖥️ **PC:** Windows, mit geeigneter Grafikkarte
+- 📺 **Monitor:** am PC angeschlossen, mit mindestens 60 Hz
 
 [Empfohlene Grafikkarten](https://store.steampowered.com/app/993090/Lossless_Scaling/): NVIDIA RTX 30-Serie, AMD RX 6000-Serie oder Intel Arc.
 
 ### Software
 
-| App | Wofür du sie brauchst | Wo du sie bekommst |
+| App | Aufgabe | Download |
 | --- | --- | --- |
 | **vicash** | Zeigt das Konsolenbild auf deinem PC | [Kostenlos herunterladen](https://github.com/caaatto/vicash/releases) |
-| **Lossless Scaling** | Ergänzt Bilder für flüssigere Bewegungen | [Auf Steam kaufen](https://store.steampowered.com/app/993090/Lossless_Scaling/) |
+| **Lossless Scaling** | Erzeugt zusätzliche Bilder für flüssigere Bewegungen | [Auf Steam kaufen](https://store.steampowered.com/app/993090/Lossless_Scaling/) |
 
-## 🛒 Capture Card auswählen
+<a id="capture-card"></a>
 
-Diese drei UGREEN-Modelle kannst du miteinander vergleichen:
+## 2️⃣ Capture Card auswählen
+
+Vergleiche diese drei UGREEN-Modelle und wähle das passende Modell für deine gewünschte Auflösung:
 
 | UGREEN-Modell | Aufnahme am PC | PC-Anschluss | HDMI-Durchschleifausgang | Richtpreis* | Shop |
 | --- | --- | --- | --- | ---: | --- |
@@ -67,26 +74,33 @@ Diese drei UGREEN-Modelle kannst du miteinander vergleichen:
 | [25773](https://www.amazon.com/dp/B0DGXJS6BF) | 1080p / 60 FPS<br>2K / 30 FPS | USB-A / USB-C<br>USB 3.0 | 4K / 30 Hz | ca. 22 € | [Amazon.de](https://www.amazon.de/dp/B0DGXJS6BF) |
 | [25173](https://www.amazon.com/dp/B0D4LV836Z) | 4K / 60 FPS<br>2K / 144 FPS<br>1080p / 240 FPS | USB-A / USB-C<br>USB 3.0 | 4K / 60 Hz | ca. 72 € | [Amazon.de](https://www.amazon.de/dp/B0D4LV836Z) |
 
-*Die Preise dienen als Orientierung aus der ursprünglichen Produktauswahl und sind keine Tagesangebote. Aktuelle Preise findest du auf Amazon.de. Die Modellnamen verlinken die Produktdaten; die Aufnahmemodi sind Herstellerangaben.*
+> [!TIP]
+> Für diese Anleitung ist **Aufnahme am PC** die wichtigste Spalte. Der HDMI-Durchschleifausgang gibt nur das ursprüngliche Konsolenbild an einen zusätzlichen Bildschirm weiter — ohne die Zwischenbilder von Lossless Scaling.
 
-> **Tipp zum Kauf:** Für diese Anleitung zählt die Spalte „Aufnahme am PC“. Der HDMI-Durchschleifausgang gibt das ursprüngliche Konsolenbild an einen zusätzlichen Fernseher oder Monitor weiter — ohne die Zwischenbilder von Lossless Scaling.
+<sub>*Die Preise dienen als Orientierung aus der ursprünglichen Produktauswahl und sind keine Tagesangebote. Die Aufnahmemodi sind Herstellerangaben. Aktuelle Preise findest du auf Amazon.de.</sub>
 
-## 🖥️ vicash einstellen
+<a id="vicash"></a>
 
-Öffne die Einstellungen mit **F1** und übernimm folgende Werte:
+## 3️⃣ vicash einstellen
 
-| Bereich | Einstellung | Wert |
-| --- | --- | --- |
-| 🖥️ **Anzeige** | Anzeigemodus | **Immediate** — ohne V-Sync und mit niedrigster Latenz |
-| 📷 **Capture** | Gerät | **UGREEN Capture Card** |
-| | Auflösung | **1920 × 1080** oder **2560 × 1440** — wähle die höchste Auflösung, die dein PC-Monitor unterstützt |
-| | FPS | **30** |
-| 🔊 **Audio** | Eingang | **UGREEN Capture Card** |
-| | Ausgang | Lautsprecher oder Kopfhörer am PC |
-| | Lautstärke | Erhöhen, falls die PS5 zu leise ist |
-| | Sync-Verzögerung | **100 ms** (Standard) |
+Öffne die Einstellungen mit **F1** und übernimm die folgenden Werte von oben nach unten.
 
-### Nützliche Hotkeys
+> **🖥️ Anzeige**<br>
+> **Modus:** `Immediate` — ohne V-Sync und mit niedrigster Latenz
+
+> **📷 Capture**<br>
+> **Gerät:** `UGREEN Capture Card`<br>
+> **Auflösung:** `1920 × 1080` oder `2560 × 1440` — nutze die höchste Auflösung, die dein PC-Monitor unterstützt<br>
+> **FPS:** `30`
+
+> **🔊 Audio**<br>
+> **Eingang:** `UGREEN Capture Card`<br>
+> **Ausgang:** Lautsprecher oder Kopfhörer am PC<br>
+> **Lautstärke:** erhöhen, falls die PS5 zu leise ist<br>
+> **Sync-Verzögerung:** `100 ms` (Standard)
+
+<details>
+<summary><strong>⌨️ Nützliche vicash-Hotkeys</strong></summary>
 
 | Taste | Funktion |
 | --- | --- |
@@ -94,54 +108,47 @@ Diese drei UGREEN-Modelle kannst du miteinander vergleichen:
 | **F11** | Vollbild umschalten |
 | **Esc** | Vollbild beenden |
 
-## 🚀 Lossless Scaling einstellen
+</details>
 
-### 1. Profil für vicash erstellen
+<a id="lossless-scaling"></a>
 
-Erstelle ein neues Profil mit dem Namen **vicash** und wähle **vicash.exe** als Anwendung aus. Lass die automatische Skalierung ausgeschaltet.
+## 4️⃣ Lossless Scaling einstellen
+
+### Schritt 1 — vicash-Profil erstellen
+
+Erstelle ein neues Profil mit dem Namen **vicash**, wähle **vicash.exe** als Anwendung aus und lass die automatische Skalierung ausgeschaltet.
 
 <p align="center">
-  <img src="assets/screenshots/ls_step1.png" alt="Erstellung eines vicash-Profils in Lossless Scaling" width="645">
+  <img src="assets/screenshots/ls_step1.png" alt="Erstellung eines vicash-Profils in Lossless Scaling" width="645"><br>
+  <sub>Profilname und Anwendungsfilter für vicash</sub>
 </p>
 
-### 2. Empfohlene Einstellungen übernehmen
+### Schritt 2 — Einstellungen übernehmen
 
-#### Frame Generation
+> [!IMPORTANT]
+> Stelle den **Multiplier auf 2**, um aus einer Eingabe mit 30 FPS eine flüssigere Ausgabe mit 60 FPS zu erzeugen.
 
-| Einstellung | Wert |
-| --- | --- |
-| Type | **LSFG 3.1** |
-| Mode | **Fixed** |
-| Multiplier | **2** |
-| Flow scale | Siehe Auflösungstabelle unten |
-| Performance | **Off** |
+> **🎞️ Frame Generation**<br>
+> **Type:** `LSFG 3.1` · **Mode:** `Fixed` · **Multiplier:** `2`<br>
+> **Performance:** `Off` · **Flow scale:** passenden Wert unten auswählen
 
-Nutze den Flow-scale-Wert, der zur in vicash gewählten Auflösung passt:
+| Full HD · 1920 × 1080 | 2K · 2560 × 1440 | 4K · 3840 × 2160 |
+| :---: | :---: | :---: |
+| **100** | **75–100** | **50–67** |
 
-| Auflösung | Flow scale |
-| --- | ---: |
-| **1920 × 1080** (Full HD) | **100** |
-| **2560 × 1440** (2K) | **75–100** |
-| **3840 × 2160** (4K) | **50–67** |
+> **🔲 Scaling**<br>
+> **Type:** `Off`
 
-#### Scaling und Capture
+> **📥 Capture**<br>
+> **Capture API:** `DXGI` · **Queue target:** `0`
 
-| Bereich | Einstellung | Wert |
-| --- | --- | --- |
-| **Scaling** | Type | **Off** |
-| **Capture** | Capture API | **DXGI** |
-| | Queue target | **0** |
-
-#### Rendering
-
-| Einstellung | Wert |
-| --- | --- |
-| Sync mode | **Default** |
-| Max frame latency | **3** |
-| HDR support | **Off** |
-| G-Sync support | **On**, wenn dein Monitor G-Sync oder FreeSync unterstützt |
-| Draw FPS | **On oder Off** — zeigt auf Wunsch die echten und künstlich erzeugten FPS an |
+> **🎨 Rendering**<br>
+> **Sync mode:** `Default` · **Max frame latency:** `3`<br>
+> **HDR support:** `Off`<br>
+> **G-Sync support:** `On`, wenn dein Monitor G-Sync oder FreeSync unterstützt<br>
+> **Draw FPS:** `On` oder `Off` — einschalten, um echte und künstlich erzeugte FPS anzuzeigen
 
 <p align="center">
-  <img src="assets/screenshots/ls_step2.png" alt="Empfohlene Lossless-Scaling-Einstellungen für das vicash-Profil" width="900">
+  <img src="assets/screenshots/ls_step2.png" alt="Empfohlene Lossless-Scaling-Einstellungen für das vicash-Profil" width="900"><br>
+  <sub>Empfohlene Lossless-Scaling-Einstellungen für das vicash-Profil</sub>
 </p>
