@@ -1,4 +1,8 @@
-<h1 align="center">🎮 FrameHeist</h1>
+<p align="center">
+  <img src="assets/logo.png" alt="30-zu-60-FPS-Logo" width="320">
+</p>
+
+<h1 align="center">GTA VI 30 to 60 FPS Guide</h1>
 
 <p align="center">
   <strong>30-FPS-Konsolenspiele mit 60 FPS oder mehr flüssiger aussehen lassen</strong><br>
@@ -19,7 +23,7 @@
 
 ---
 
-FrameHeist zeigt dir, wie Konsolenspiele mit einer **Capture Card**, einem **Windows-PC**, **vicash** und **Lossless Scaling** flüssiger aussehen können. Im Mittelpunkt steht GTA VI, die Methode funktioniert aber auch mit anderen Konsolenspielen.
+Diese Anleitung zeigt dir, wie Konsolenspiele mit einer **Capture Card**, einem **Windows-PC**, **vicash** und **Lossless Scaling** flüssiger aussehen können. Im Mittelpunkt steht GTA VI, die Methode funktioniert aber auch mit anderen Konsolenspielen.
 
 Die Capture Card bringt das Konsolenbild auf deinen PC. **vicash** zeigt es an, während **Lossless Scaling** zusätzliche Zwischenbilder erzeugt. Du spielst weiterhin mit dem Controller, der mit deiner Konsole verbunden ist.
 

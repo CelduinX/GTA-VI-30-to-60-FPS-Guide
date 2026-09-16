@@ -1,4 +1,8 @@
-<h1 align="center">🎮 FrameHeist</h1>
+<p align="center">
+  <img src="assets/logo.png" alt="30 to 60 FPS logo" width="320">
+</p>
+
+<h1 align="center">GTA VI 30 to 60 FPS Guide</h1>
 
 <p align="center">
   <strong>Make 30 FPS console games look smoother at 60 FPS or more</strong><br>
@@ -19,7 +23,7 @@
 
 ---
 
-FrameHeist shows you how to make console gameplay look smoother with a **capture card**, a **Windows PC**, **vicash** and **Lossless Scaling**. GTA VI is the focus of this project, but the same method also works with other console games.
+This guide shows you how to make console gameplay look smoother with a **capture card**, a **Windows PC**, **vicash** and **Lossless Scaling**. GTA VI is the focus of this project, but the same method also works with other console games.
 
 The capture card brings the console picture to your PC. **vicash** displays it, while **Lossless Scaling** creates additional frames between the originals. You continue to play with the controller connected to your console.
 
