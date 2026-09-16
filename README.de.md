@@ -85,19 +85,22 @@ Vergleiche diese drei UGREEN-Modelle und wähle das passende Modell für deine g
 
 Öffne die Einstellungen mit **F1** und übernimm die folgenden Werte von oben nach unten.
 
-> **🖥️ Anzeige**<br>
-> **Modus:** `Immediate` — ohne V-Sync und mit niedrigster Latenz
+### 🖥️ Anzeige
 
-> **📷 Capture**<br>
-> **Gerät:** `UGREEN Capture Card`<br>
-> **Auflösung:** `1920 × 1080` oder `2560 × 1440` — nutze die höchste Auflösung, die dein PC-Monitor unterstützt<br>
-> **FPS:** `30`
+- **Modus:** `Immediate` — ohne V-Sync und mit niedrigster Latenz
 
-> **🔊 Audio**<br>
-> **Eingang:** `UGREEN Capture Card`<br>
-> **Ausgang:** Lautsprecher oder Kopfhörer am PC<br>
-> **Lautstärke:** erhöhen, falls die PS5 zu leise ist<br>
-> **Sync-Verzögerung:** `100 ms` (Standard)
+### 📷 Capture
+
+- **Gerät:** `UGREEN Capture Card`
+- **Auflösung:** `1920 × 1080` oder `2560 × 1440` — nutze die höchste Auflösung, die dein PC-Monitor unterstützt
+- **FPS:** `30`
+
+### 🔊 Audio
+
+- **Eingang:** `UGREEN Capture Card`
+- **Ausgang:** Lautsprecher oder Kopfhörer am PC
+- **Lautstärke:** erhöhen, falls die PS5 zu leise ist
+- **Sync-Verzögerung:** `100 ms` (Standard)
 
 <details>
 <summary><strong>⌨️ Nützliche vicash-Hotkeys</strong></summary>
@@ -128,25 +131,34 @@ Erstelle ein neues Profil mit dem Namen **vicash**, wähle **vicash.exe** als An
 > [!IMPORTANT]
 > Stelle den **Multiplier auf 2**, um aus einer Eingabe mit 30 FPS eine flüssigere Ausgabe mit 60 FPS zu erzeugen.
 
-> **🎞️ Frame Generation**<br>
-> **Type:** `LSFG 3.1` · **Mode:** `Fixed` · **Multiplier:** `2`<br>
-> **Performance:** `Off` · **Flow scale:** passenden Wert unten auswählen
+#### 🎞️ Frame Generation
+
+- **Type:** `LSFG 3.1`
+- **Mode:** `Fixed`
+- **Multiplier:** `2`
+- **Performance:** `Off`
+- **Flow scale:** passenden Wert unten auswählen
 
 | Full HD · 1920 × 1080 | 2K · 2560 × 1440 | 4K · 3840 × 2160 |
 | :---: | :---: | :---: |
 | **100** | **75–100** | **50–67** |
 
-> **🔲 Scaling**<br>
-> **Type:** `Off`
+#### 🔲 Scaling
 
-> **📥 Capture**<br>
-> **Capture API:** `DXGI` · **Queue target:** `0`
+- **Type:** `Off`
 
-> **🎨 Rendering**<br>
-> **Sync mode:** `Default` · **Max frame latency:** `3`<br>
-> **HDR support:** `Off`<br>
-> **G-Sync support:** `On`, wenn dein Monitor G-Sync oder FreeSync unterstützt<br>
-> **Draw FPS:** `On` oder `Off` — einschalten, um echte und künstlich erzeugte FPS anzuzeigen
+#### 📥 Capture
+
+- **Capture API:** `DXGI`
+- **Queue target:** `0`
+
+#### 🎨 Rendering
+
+- **Sync mode:** `Default`
+- **Max frame latency:** `3`
+- **HDR support:** `Off`
+- **G-Sync support:** `On`, wenn dein Monitor G-Sync oder FreeSync unterstützt
+- **Draw FPS:** `On` oder `Off` — einschalten, um echte und künstlich erzeugte FPS anzuzeigen
 
 <p align="center">
   <img src="assets/screenshots/ls_step2.png" alt="Empfohlene Lossless-Scaling-Einstellungen für das vicash-Profil" width="900"><br>
