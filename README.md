@@ -14,6 +14,10 @@
 </p>
 
 <p align="center">
+  <a href="https://celduinx.github.io/GTA-VI-30-to-60-FPS-Guide/"><strong>🌐 Open the complete interactive web guide</strong></a>
+</p>
+
+<p align="center">
   <a href="#demo">🎥 Demo</a> &nbsp;•&nbsp;
   <a href="#requirements">🧰 What you need</a> &nbsp;•&nbsp;
   <a href="#capture-card">🛒 Capture card</a> &nbsp;•&nbsp;

@@ -2,3 +2,7 @@
 /.docs/
 /README.ME
 /Anleitung (Rohfassung).txt
+
+# Local media sources — intentionally excluded from the public site.
+/assets/thumbnail.png
+/assets/ac-mirage_demo.mov

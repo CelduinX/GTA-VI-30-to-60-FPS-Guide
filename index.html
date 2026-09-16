@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-language="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111716">
+    <meta name="description" content="A step-by-step guide to displaying 30 FPS console games more smoothly with a capture card, vicash and Lossless Scaling.">
+    <title>GTA VI 30 to 60 FPS Guide</title>
+    <script>
+      try {
+        const savedLanguage = localStorage.getItem("guide-language");
+        if (savedLanguage === "de") {
+          document.documentElement.lang = "de";
+          document.documentElement.dataset.language = "de";
+        }
+      } catch (_) {}
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">
+      <span data-language="en">Skip to the guide</span>
+      <span data-language="de">Direkt zur Anleitung</span>
+    </a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#overview" aria-label="GTA VI 30 to 60 FPS Guide">
+          <img src="assets/logo.png" alt="" width="1774" height="887">
+          <span>30 → 60 FPS</span>
+        </a>
+
+        <div class="language-switch" role="group" aria-label="Language / Sprache">
+          <button type="button" data-set-language="en" aria-pressed="true">
+            <span aria-hidden="true">EN</span>
+            <span class="switch-label">English</span>
+          </button>
+          <button type="button" data-set-language="de" aria-pressed="false">
+            <span aria-hidden="true">DE</span>
+            <span class="switch-label">Deutsch</span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="section-nav" aria-label="Guide sections">
+        <div data-language="en">
+          <a href="#requirements">01 Setup</a>
+          <a href="#capture-card">02 Capture card</a>
+          <a href="#vicash">03 vicash</a>
+          <a href="#lossless-scaling">04 Lossless Scaling</a>
+        </div>
+        <div data-language="de">
+          <a href="#requirements">01 Ausstattung</a>
+          <a href="#capture-card">02 Capture Card</a>
+          <a href="#vicash">03 vicash</a>
+          <a href="#lossless-scaling">04 Lossless Scaling</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="overview">
+        <div class="hero-copy">
+          <div data-language="en">
+            <p class="eyebrow">Console frame generation guide</p>
+            <h1>GTA VI<br><span>30 to 60 FPS</span> Guide</h1>
+            <p class="lede">Make 30 FPS console games look smoother at 60 FPS or more with a capture card, a Windows PC, vicash and Lossless Scaling.</p>
+            <div class="platforms">
+              <span>PS5</span><span>Xbox Series X|S</span><span>Windows PC</span>
+            </div>
+          </div>
+          <div data-language="de">
+            <p class="eyebrow">Anleitung zur Frame Generation für Konsolen</p>
+            <h1>GTA VI<br><span>30 auf 60 FPS</span> Anleitung</h1>
+            <p class="lede">Lass 30-FPS-Konsolenspiele mit einer Capture Card, einem Windows-PC, vicash und Lossless Scaling bei 60 FPS oder mehr flüssiger aussehen.</p>
+            <div class="platforms">
+              <span>PS5</span><span>Xbox Series X|S</span><span>Windows-PC</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-note">
+          <div class="signal-readout" aria-hidden="true">
+            <span><b>30</b> FPS INPUT</span>
+            <i></i>
+            <span><b>60</b> FPS OUTPUT</span>
+          </div>
+          <div data-language="en">
+            <p class="note-label">Important</p>
+            <p>The picture looks smoother, but the console itself does not run faster. Frame generation can add a little latency and may occasionally cause visual artifacts.</p>
+          </div>
+          <div data-language="de">
+            <p class="note-label">Wichtig</p>
+            <p>Das Bild wirkt flüssiger, die Konsole selbst wird dadurch aber nicht schneller. Frame Generation kann die Verzögerung leicht erhöhen und gelegentlich Bildfehler verursachen.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="demo-panel" aria-labelledby="demo-title">
+        <div class="section-intro compact">
+          <div data-language="en">
+            <p class="section-kicker">Demo</p>
+            <h2 id="demo-title">See the difference</h2>
+            <p>Assassin’s Creed Mirage on PS5: original 30 FPS beside a 60 FPS output created by Lossless Scaling.</p>
+          </div>
+          <div data-language="de">
+            <p class="section-kicker">Demo</p>
+            <h2 id="demo-title-de">Sieh den Unterschied</h2>
+            <p>Assassin’s Creed Mirage auf der PS5: originale 30 FPS neben einer 60-FPS-Ausgabe durch Lossless Scaling.</p>
+          </div>
+        </div>
+        <div class="video-shell">
+          <iframe src="https://www.youtube-nocookie.com/embed/ntizJL75VQM?rel=0" title="30 FPS versus 60 FPS Lossless Scaling demo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="guide-section" id="requirements">
+        <div class="step-marker" aria-hidden="true"><span>01</span></div>
+        <div class="section-body">
+          <div data-language="en">
+            <div class="section-intro">
+              <p class="section-kicker">Start here</p>
+              <h2>What you need</h2>
+              <p>Four pieces of hardware and two Windows apps create the complete signal path.</p>
+            </div>
+
+            <div class="requirements-grid">
+              <article class="requirement-card"><span>01</span><h3>Console</h3><p>PS5 or Xbox Series X|S</p></article>
+              <article class="requirement-card"><span>02</span><h3>Capture card</h3><p>HDMI model with matching HDMI and USB cables</p></article>
+              <article class="requirement-card"><span>03</span><h3>Windows PC</h3><p>Recommended: NVIDIA RTX 30 series, AMD RX 6000 series or Intel Arc</p></article>
+              <article class="requirement-card"><span>04</span><h3>Monitor</h3><p>Connected to the PC, with at least 60 Hz</p></article>
+            </div>
+
+            <div class="software-list">
+              <article>
+                <div><p class="app-index">APP 01</p><h3>vicash</h3><p>Displays the console picture on your PC.</p></div>
+                <a class="text-link" href="https://github.com/caaatto/vicash/releases" target="_blank" rel="noopener noreferrer">Free download <span aria-hidden="true">↗</span></a>
+              </article>
+              <article>
+                <div><p class="app-index">APP 02</p><h3>Lossless Scaling</h3><p>Generates additional frames for smoother movement.</p></div>
+                <a class="text-link" href="https://store.steampowered.com/app/993090/Lossless_Scaling/" target="_blank" rel="noopener noreferrer">Buy on Steam <span aria-hidden="true">↗</span></a>
+              </article>
+            </div>
+          </div>
+
+          <div data-language="de">
+            <div class="section-intro">
+              <p class="section-kicker">Hier geht’s los</p>
+              <h2>Das brauchst du</h2>
+              <p>Vier Geräte und zwei Windows-Apps bilden den vollständigen Signalweg.</p>
+            </div>
+
+            <div class="requirements-grid">
+              <article class="requirement-card"><span>01</span><h3>Konsole</h3><p>PS5 oder Xbox Series X|S</p></article>
+              <article class="requirement-card"><span>02</span><h3>Capture Card</h3><p>HDMI-Modell mit passenden HDMI- und USB-Kabeln</p></article>
+              <article class="requirement-card"><span>03</span><h3>Windows-PC</h3><p>Empfohlen: NVIDIA RTX 30-Serie, AMD RX 6000-Serie oder Intel Arc</p></article>
+              <article class="requirement-card"><span>04</span><h3>Monitor</h3><p>Am PC angeschlossen, mit mindestens 60 Hz</p></article>
+            </div>
+
+            <div class="software-list">
+              <article>
+                <div><p class="app-index">APP 01</p><h3>vicash</h3><p>Zeigt das Konsolenbild auf deinem PC.</p></div>
+                <a class="text-link" href="https://github.com/caaatto/vicash/releases" target="_blank" rel="noopener noreferrer">Kostenlos herunterladen <span aria-hidden="true">↗</span></a>
+              </article>
+              <article>
+                <div><p class="app-index">APP 02</p><h3>Lossless Scaling</h3><p>Erzeugt zusätzliche Bilder für flüssigere Bewegungen.</p></div>
+                <a class="text-link" href="https://store.steampowered.com/app/993090/Lossless_Scaling/" target="_blank" rel="noopener noreferrer">Auf Steam kaufen <span aria-hidden="true">↗</span></a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section" id="capture-card">
+        <div class="step-marker" aria-hidden="true"><span>02</span></div>
+        <div class="section-body">
+          <div data-language="en">
+            <div class="section-intro">
+              <p class="section-kicker">Compare the hardware</p>
+              <h2>Choose a capture card</h2>
+              <p>Pick the UGREEN model that matches the resolution and refresh rate you want to capture on the PC.</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Model</th><th>Capture on PC</th><th>PC connection</th><th>HDMI passthrough</th><th>Guide price*</th><th>Shop</th></tr></thead>
+                <tbody>
+                  <tr><td data-label="Model"><a href="https://www.amazon.com/dp/B0DT9DY312" target="_blank" rel="noopener noreferrer"><strong>15389</strong></a></td><td data-label="Capture on PC">1080p / 60 FPS<br>2K / 30 FPS</td><td data-label="PC connection">USB-A / USB-C<br>USB 3.0</td><td data-label="HDMI passthrough">—</td><td data-label="Guide price*">≈ €16</td><td data-label="Shop"><a href="https://www.amazon.de/dp/B0DT9DY312" target="_blank" rel="noopener noreferrer">Amazon.de ↗</a></td></tr>
+                  <tr><td data-label="Model"><a href="https://www.amazon.com/dp/B0DGXJS6BF" target="_blank" rel="noopener noreferrer"><strong>25773</strong></a></td><td data-label="Capture on PC">1080p / 60 FPS<br>2K / 30 FPS</td><td data-label="PC connection">USB-A / USB-C<br>USB 3.0</td><td data-label="HDMI passthrough">4K / 30 Hz</td><td data-label="Guide price*">≈ €22</td><td data-label="Shop"><a href="https://www.amazon.de/dp/B0DGXJS6BF" target="_blank" rel="noopener noreferrer">Amazon.de ↗</a></td></tr>
+                  <tr><td data-label="Model"><a href="https://www.amazon.com/dp/B0D4LV836Z" target="_blank" rel="noopener noreferrer"><strong>25173</strong></a></td><td data-label="Capture on PC">4K / 60 FPS<br>2K / 144 FPS<br>1080p / 240 FPS</td><td data-label="PC connection">USB-A / USB-C<br>USB 3.0</td><td data-label="HDMI passthrough">4K / 60 Hz</td><td data-label="Guide price*">≈ €72</td><td data-label="Shop"><a href="https://www.amazon.de/dp/B0D4LV836Z" target="_blank" rel="noopener noreferrer">Amazon.de ↗</a></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout"><strong>Focus on “Capture on PC.”</strong> HDMI passthrough only sends the original console picture to a separate display—without the extra Lossless Scaling frames.</div>
+            <p class="fine-print">*Prices are estimates from the original shortlist, not live offers. Capture modes are manufacturer ratings. Check Amazon.de for current prices.</p>
+          </div>
+
+          <div data-language="de">
+            <div class="section-intro">
+              <p class="section-kicker">Hardware vergleichen</p>
+              <h2>Capture Card auswählen</h2>
+              <p>Wähle das UGREEN-Modell passend zu der Auflösung und Bildrate, die du am PC aufnehmen möchtest.</p>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Modell</th><th>Aufnahme am PC</th><th>PC-Anschluss</th><th>HDMI-Durchschleifausgang</th><th>Richtpreis*</th><th>Shop</th></tr></thead>
+                <tbody>
+                  <tr><td data-label="Modell"><a href="https://www.amazon.com/dp/B0DT9DY312" target="_blank" rel="noopener noreferrer"><strong>15389</strong></a></td><td data-label="Aufnahme am PC">1080p / 60 FPS<br>2K / 30 FPS</td><td data-label="PC-Anschluss">USB-A / USB-C<br>USB 3.0</td><td data-label="HDMI-Durchschleifausgang">—</td><td data-label="Richtpreis*">ca. 16 €</td><td data-label="Shop"><a href="https://www.amazon.de/dp/B0DT9DY312" target="_blank" rel="noopener noreferrer">Amazon.de ↗</a></td></tr>
+                  <tr><td data-label="Modell"><a href="https://www.amazon.com/dp/B0DGXJS6BF" target="_blank" rel="noopener noreferrer"><strong>25773</strong></a></td><td data-label="Aufnahme am PC">1080p / 60 FPS<br>2K / 30 FPS</td><td data-label="PC-Anschluss">USB-A / USB-C<br>USB 3.0</td><td data-label="HDMI-Durchschleifausgang">4K / 30 Hz</td><td data-label="Richtpreis*">ca. 22 €</td><td data-label="Shop"><a href="https://www.amazon.de/dp/B0DGXJS6BF" target="_blank" rel="noopener noreferrer">Amazon.de ↗</a></td></tr>
+                  <tr><td data-label="Modell"><a href="https://www.amazon.com/dp/B0D4LV836Z" target="_blank" rel="noopener noreferrer"><strong>25173</strong></a></td><td data-label="Aufnahme am PC">4K / 60 FPS<br>2K / 144 FPS<br>1080p / 240 FPS</td><td data-label="PC-Anschluss">USB-A / USB-C<br>USB 3.0</td><td data-label="HDMI-Durchschleifausgang">4K / 60 Hz</td><td data-label="Richtpreis*">ca. 72 €</td><td data-label="Shop"><a href="https://www.amazon.de/dp/B0D4LV836Z" target="_blank" rel="noopener noreferrer">Amazon.de ↗</a></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout"><strong>Achte vor allem auf „Aufnahme am PC“.</strong> Der HDMI-Durchschleifausgang gibt nur das ursprüngliche Konsolenbild an einen zusätzlichen Bildschirm weiter—ohne die zusätzlichen Bilder von Lossless Scaling.</div>
+            <p class="fine-print">*Die Preise dienen als Orientierung aus der ursprünglichen Produktauswahl und sind keine Tagesangebote. Die Aufnahmemodi sind Herstellerangaben. Aktuelle Preise findest du auf Amazon.de.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section" id="vicash">
+        <div class="step-marker" aria-hidden="true"><span>03</span></div>
+        <div class="section-body">
+          <div data-language="en">
+            <div class="section-intro">
+              <p class="section-kicker">Set the input</p>
+              <h2>Configure vicash</h2>
+              <p>Press <kbd>F1</kbd> to open the settings, then apply these values from top to bottom.</p>
+            </div>
+            <div class="settings-grid">
+              <article><p class="setting-number">01 / Display</p><h3>Mode</h3><p><code>Immediate</code></p><small>No V-Sync and the lowest latency</small></article>
+              <article><p class="setting-number">02 / Capture</p><h3>Device</h3><p><code>UGREEN Capture Card</code></p><h3>Resolution</h3><p><code>1920 × 1080</code> or <code>2560 × 1440</code></p><small>Use the highest resolution supported by your PC monitor</small><h3>FPS</h3><p><code>30</code></p></article>
+              <article><p class="setting-number">03 / Audio</p><h3>Input</h3><p><code>UGREEN Capture Card</code></p><h3>Output</h3><p>PC speakers or headphones</p><h3>Sync delay</h3><p><code>100 ms</code> <small>(default)</small></p><small>Increase the volume if the PS5 is too quiet</small></article>
+            </div>
+            <div class="hotkeys">
+              <p>Useful hotkeys</p><span><kbd>F1</kbd> Settings</span><span><kbd>F11</kbd> Fullscreen</span><span><kbd>Esc</kbd> Exit fullscreen</span>
+            </div>
+          </div>
+
+          <div data-language="de">
+            <div class="section-intro">
+              <p class="section-kicker">Eingang festlegen</p>
+              <h2>vicash einstellen</h2>
+              <p>Drücke <kbd>F1</kbd>, um die Einstellungen zu öffnen, und übernimm dann diese Werte von oben nach unten.</p>
+            </div>
+            <div class="settings-grid">
+              <article><p class="setting-number">01 / Anzeige</p><h3>Modus</h3><p><code>Immediate</code></p><small>Ohne V-Sync und mit niedrigster Latenz</small></article>
+              <article><p class="setting-number">02 / Capture</p><h3>Gerät</h3><p><code>UGREEN Capture Card</code></p><h3>Auflösung</h3><p><code>1920 × 1080</code> oder <code>2560 × 1440</code></p><small>Nutze die höchste Auflösung, die dein PC-Monitor unterstützt</small><h3>FPS</h3><p><code>30</code></p></article>
+              <article><p class="setting-number">03 / Audio</p><h3>Eingang</h3><p><code>UGREEN Capture Card</code></p><h3>Ausgang</h3><p>Lautsprecher oder Kopfhörer am PC</p><h3>Sync-Verzögerung</h3><p><code>100 ms</code> <small>(Standard)</small></p><small>Erhöhe die Lautstärke, falls die PS5 zu leise ist</small></article>
+            </div>
+            <div class="hotkeys">
+              <p>Nützliche Hotkeys</p><span><kbd>F1</kbd> Einstellungen</span><span><kbd>F11</kbd> Vollbild</span><span><kbd>Esc</kbd> Vollbild beenden</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section" id="lossless-scaling">
+        <div class="step-marker" aria-hidden="true"><span>04</span></div>
+        <div class="section-body">
+          <div data-language="en">
+            <div class="section-intro">
+              <p class="section-kicker">Generate the extra frames</p>
+              <h2>Configure Lossless Scaling</h2>
+              <p>Create a profile for vicash, then set frame generation to double the 30 FPS input.</p>
+            </div>
+
+            <article class="profile-step">
+              <div class="profile-copy"><p class="substep">Step 1</p><h3>Create a vicash profile</h3><p>Create a new profile called <strong>vicash</strong>, select <strong>vicash.exe</strong> as the application and leave automatic scaling turned off.</p></div>
+              <figure><img src="assets/screenshots/ls_step1.png" alt="Creating a vicash profile in Lossless Scaling" width="641" height="304" loading="lazy"><figcaption>Profile name and application filter for vicash</figcaption></figure>
+            </article>
+
+            <article class="profile-step settings-step">
+              <div class="profile-copy"><p class="substep">Step 2</p><h3>Apply the settings</h3><div class="multiplier"><span>Multiplier</span><strong>2×</strong><small>30 FPS input → 60 FPS output</small></div>
+                <div class="setting-columns">
+                  <div><h4>Frame Generation</h4><dl><dt>Type</dt><dd>LSFG 3.1</dd><dt>Mode</dt><dd>Fixed</dd><dt>Performance</dt><dd>Off</dd></dl></div>
+                  <div><h4>Capture</h4><dl><dt>API</dt><dd>DXGI</dd><dt>Queue target</dt><dd>0</dd></dl><h4>Scaling</h4><dl><dt>Type</dt><dd>Off</dd></dl></div>
+                  <div><h4>Rendering</h4><dl><dt>Sync mode</dt><dd>Default</dd><dt>Max frame latency</dt><dd>3</dd><dt>HDR support</dt><dd>Off</dd><dt>G-Sync support</dt><dd>On*</dd><dt>Draw FPS</dt><dd>Optional</dd></dl></div>
+                </div>
+                <p class="fine-print">*Enable G-Sync support only if your monitor supports G-Sync or FreeSync.</p>
+                <div class="flow-scale"><span>Flow scale</span><b>1080p <em>100</em></b><b>1440p <em>75–100</em></b><b>4K <em>50–67</em></b></div>
+              </div>
+              <figure><img src="assets/screenshots/ls_step2.png" alt="Recommended Lossless Scaling settings for the vicash profile" width="974" height="903" loading="lazy"><figcaption>Recommended settings for the vicash profile</figcaption></figure>
+            </article>
+          </div>
+
+          <div data-language="de">
+            <div class="section-intro">
+              <p class="section-kicker">Zusätzliche Bilder erzeugen</p>
+              <h2>Lossless Scaling einstellen</h2>
+              <p>Erstelle ein Profil für vicash und stelle die Frame Generation so ein, dass sie die 30-FPS-Eingabe verdoppelt.</p>
+            </div>
+
+            <article class="profile-step">
+              <div class="profile-copy"><p class="substep">Schritt 1</p><h3>vicash-Profil erstellen</h3><p>Erstelle ein neues Profil mit dem Namen <strong>vicash</strong>, wähle <strong>vicash.exe</strong> als Anwendung aus und lass die automatische Skalierung ausgeschaltet.</p></div>
+              <figure><img src="assets/screenshots/ls_step1.png" alt="Erstellung eines vicash-Profils in Lossless Scaling" width="641" height="304" loading="lazy"><figcaption>Profilname und Anwendungsfilter für vicash</figcaption></figure>
+            </article>
+
+            <article class="profile-step settings-step">
+              <div class="profile-copy"><p class="substep">Schritt 2</p><h3>Einstellungen übernehmen</h3><div class="multiplier"><span>Multiplier</span><strong>2×</strong><small>30 FPS Eingabe → 60 FPS Ausgabe</small></div>
+                <div class="setting-columns">
+                  <div><h4>Frame Generation</h4><dl><dt>Type</dt><dd>LSFG 3.1</dd><dt>Mode</dt><dd>Fixed</dd><dt>Performance</dt><dd>Off</dd></dl></div>
+                  <div><h4>Capture</h4><dl><dt>API</dt><dd>DXGI</dd><dt>Queue target</dt><dd>0</dd></dl><h4>Scaling</h4><dl><dt>Type</dt><dd>Off</dd></dl></div>
+                  <div><h4>Rendering</h4><dl><dt>Sync mode</dt><dd>Default</dd><dt>Max frame latency</dt><dd>3</dd><dt>HDR support</dt><dd>Off</dd><dt>G-Sync support</dt><dd>On*</dd><dt>Draw FPS</dt><dd>Optional</dd></dl></div>
+                </div>
+                <p class="fine-print">*Aktiviere G-Sync support nur, wenn dein Monitor G-Sync oder FreeSync unterstützt.</p>
+                <div class="flow-scale"><span>Flow scale</span><b>1080p <em>100</em></b><b>1440p <em>75–100</em></b><b>4K <em>50–67</em></b></div>
+              </div>
+              <figure><img src="assets/screenshots/ls_step2.png" alt="Empfohlene Lossless-Scaling-Einstellungen für das vicash-Profil" width="974" height="903" loading="lazy"><figcaption>Empfohlene Einstellungen für das vicash-Profil</figcaption></figure>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="assets/logo.png" alt="" width="1774" height="887">
+      <div data-language="en"><p><strong>Ready.</strong> Open vicash, switch to fullscreen with <kbd>F11</kbd> and start Lossless Scaling.</p><a href="#overview">Back to top ↑</a></div>
+      <div data-language="de"><p><strong>Fertig.</strong> Öffne vicash, wechsle mit <kbd>F11</kbd> ins Vollbild und starte Lossless Scaling.</p><a href="#overview">Nach oben ↑</a></div>
+    </footer>
+  </body>
+</html>
